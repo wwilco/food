@@ -7,7 +7,6 @@
     width:100%;
     bottom:0;
     position:fixed;
-
   }
   .col-xs-3{
     color:hotpink;
@@ -15,42 +14,4 @@
     font-size:120%;
     padding: 10px 0 10px 0;
   }
-
-/*old  */
-  /*h1{
-    text-align:center;
-  }
-  .test{
-    max-width:100%;
-    border:2px solid hotpink;
-  }
-  body {
-    text-decoration: none;
-    border: 2px solid purple;
-    width:100%
-  }*/
-
-  /*.footer-menu {
-    box-sizing:border-box;
-    border: 2px solid hotpink;
-    left:auto;
-    right:auto;
-    bottom:0;
-    position:fixed;
-    text-align:center;
-    position:absolute;
-  }
-  .table-item{
-    box-sizing:border-box;
-    display:inline-block;
-    left:auto;
-    right:auto;
-    font-size:100%;
-    background-color:burlywood;
-
-  }
-
-  .span3{
-    border:2px solid red;
-  }*/
 }
