@@ -6,40 +6,45 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body>
+  <body class="body-color">
     <div class="container">
 
-      <div class="row header">
+      <div class="row header-container">
         <h1>Eatable!</h1>
         <img id="logo" src="pigeon.png" alt="" />
       </div>
       <div class="row slogan">
-        Helping <i>You</i> Find The Food You Love
+        <p>
+          Helping You Find The Food You Love
+        </p>
       </div>
       <div class="row form form-top-container">
         <form class="home-search" action="index.html" method="post">
           <input type="text" name="search" placeholder="  Search Menu Items..." value="">
           <br>
-          <button name="submit">Find Food <b>You</b> Love</button>
+          <button name="submit">Find Food You Love</button>
+          <br>
           <a href="#" style="font-size:70%">Advanced Search</a>
         </form>
       </div>
 
+      <div class="mid-bottom-container">
+
       <div class="row middle-container">
+        <a href="#">Find random and unusual eats! Be brave!</a>
         <div class="row-same-height">
-          <div class="col-xs-4 col-xs-height col-sm-4 col-md-4">
-            <img src="pigeon.png" style="height:10%; padding:5px 0 5px 0"/>
+          <div class="pick-box col-xs-4 col-xs-height col-sm-4 col-md-4">
+            <img src="pigeon.png"/>
             <br>
-            <span style="border:1px solid grey">Pick for me!</span>
+            <span>Pick for me!</span>
           </div>
-          <div class="col-xs-8 col-xs-height col-sm-8 col-md-8">
-            <img src="pigeon.png" style="height:10%; padding:5px 0 5px 0"/>
+          <div class="pick-box col-xs-8 col-xs-height col-sm-8 col-md-8">
+            <img src="pigeon.png"/>
             <br>
-            <span style="border:1px solid grey">Pick something adventurous!</span>
+            <span>Pick something adventurous!</span>
           </div>
           <br>
         </div>
-        <a href="#">Find random and unusual eats! Be brave!</a>
       </div>
 
       <div class="row form form-bottom-container">
@@ -53,7 +58,7 @@
           <a href="#" style="font-size:70%">Forgot Username/Password?</a>
         </form>
       </div>
-
+    </div>
       <!--home menu/footer -->
       <div class="row footer">
         <div class="menu-button col-xs-3 col-sm-3 col-md-3" id="one">
