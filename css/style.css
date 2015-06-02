@@ -6,7 +6,7 @@
   .header-container{
     padding:1%;
     box-sizing:border-box;
-    border:1px solid orange;
+    border:1px solid #FFC670;
     max-height:15%;
   }
   .form-top-container{
@@ -36,7 +36,8 @@
   }
   .mid-bottom-container{
     box-sizing:border-box;
-    border:2px solid hotpink;
+    border:2px solid #FFC670;
+    background-color:#FFC670;
     margin-top:1%;
     /*display:inline-block;*/
     padding-bottom:15%;
@@ -58,7 +59,7 @@
     box-sizing:border-box;
     text-align:center;
     font-size:120%;
-    border:solid orange;
+    border:solid #FFC670;
     border-width:1px 1px 2px 1px;
     padding-top:3%;
   }
@@ -133,9 +134,25 @@
     float: none !important;
   }
 
+  /*bottom/login form*/
+  .form-bottom-search input:first-child{
+    background-image:url('../images/user_icon.png');
+    background-size:20px;
+    background-repeat:no-repeat;
+    background-position:95%;
+  }
+  .form-bottom-search input:nth-of-type(2){
+    background-image:url('../images/lock_icon.png');
+    background-size:20px;
+    background-repeat:no-repeat;
+    background-position:95%;
+    color:grey;
+  }
+
+
 /*footer-menu*/
   .menu-button{
-    background-color:#673B72;
+    background-color:#FFC670;
   }
   .footer {
     border:1px solid purple;
@@ -145,11 +162,11 @@
     display:block;
   }
   .col-xs-3{
-    color:hotpink;
+    color:purple;
     text-align:center;
     font-size:100%;
     padding: 10px 0 10px 0;
-    border:1px solid orange;
+    border:1px solid purple;
     /*overflow:scroll;*/
   }
   .body-color {
