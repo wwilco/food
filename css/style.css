@@ -85,10 +85,13 @@
     border:1px solid lightgrey;
     overflow:auto;
   }
+  .form a {
+    font-size:70%;
+  }
 
   /*top form*/
   .form-top-container input{
-    background-image:url('search-icon.jpeg');
+    background-image:url('../images/search-icon.jpeg');
     background-size:15px;
     background-repeat:no-repeat;
     background-position:95%;
