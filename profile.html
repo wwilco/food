@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>wamo</title>
+    <title>profile</title>
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
@@ -13,9 +13,22 @@
         <h1>Eatable!</h1>
         <img id="logo" src="images/pigeon.png" alt="" />
       </div>
-      <div class="row slogan">
-        <p>Helping You Find The Food You Love</p>
-      </div>
+
+      <section>
+        <input type="checkbox" name="profile" value="">
+        <div class="row">
+          <h2>User Info</h2>
+          <div class=" form-profile user-info">
+            <form class="" action="index.html" method="post">
+              First Name: <input type="text" name="first-name" value="">
+              <br>
+              Last Name: <input type="text" name="last-name" value="">
+            </form>
+          </div>
+        </div>
+      </section>
+
+
       <div class="row form form-top-container">
         <form class="home-search" action="index.html" method="post">
           <input type="text" name="search" placeholder="Search Menus or Restaurants..." value="">
@@ -29,7 +42,6 @@
       <div class="mid-bottom-container">
 
         <div class="row middle-container">
-          <a href="#">Find random and unusual eats! Be brave!</a>
           <div class="row-same-height">
             <div class="pick-box col-xs-4 col-xs-height col-sm-4 col-md-4">
               <img src="images/tomato_icon.png"/>
@@ -42,6 +54,7 @@
               <span>Pick something adventurous!</span>
             </div>
             <br>
+            <a href="#">Find random and unusual eats! Be brave!</a>
           </div>
         </div>
 

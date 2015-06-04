@@ -1,6 +1,8 @@
 /*@media (max-width:375px){*/
   .container{
-    overflow:hidden;
+    overflow:scroll;
+    padding-bottom:15%;
+
   }
   /*layout-order:header,form-top,middle,form-bottom,mid-bottom,footer*/
   .header-container{
