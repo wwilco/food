@@ -1,14 +1,20 @@
+/*colors:
+  Green: R=116, G=192, B=70   HEX= 74c046
+  BlueGrey: R=148, G=169, B=181   HEX= 94a9b5
+  Black: R=34, G=30, B=31   HEX= 221e1f*/
+
+
 /*@media (max-width:375px){*/
   .container{
     overflow:scroll;
     padding-bottom:15%;
-
+    box-sizing:border-box;
   }
   /*layout-order:header,form-top,middle,form-bottom,mid-bottom,footer*/
   .header-container{
     padding:1%;
     box-sizing:border-box;
-    border:1px solid #FFC670;
+    border:1px solid #74c046;
     max-height:15%;
   }
   .form-top-container{
@@ -38,8 +44,8 @@
   }
   .mid-bottom-container{
     box-sizing:border-box;
-    border:2px solid #FFC670;
-    background-color:#FFC670;
+    border:2px solid #94a9b5;
+    background-color:#94a9b5;
     margin-top:1%;
     /*display:inline-block;*/
     padding-bottom:15%;
@@ -57,11 +63,18 @@
     padding-right:5%;
     /*border:1px solid orange;*/
   }
+  #banner{
+    float:right;
+    text-align:center;
+    padding-right:5%;
+    height:90%;
+    /*border:1px solid orange;*/
+  }
   .slogan{
     box-sizing:border-box;
     text-align:center;
     font-size:120%;
-    border:solid #FFC670;
+    border:solid #74c046;
     border-width:1px 1px 2px 1px;
     padding-top:3%;
   }
@@ -115,9 +128,11 @@
     padding-right:0%;
   }
   .middle-container span {
-    border:1px solid grey;
-    color:grey;
+    border:1px solid black;
+    border-radius:5px;
+    color:black;
     padding:1%;
+    background-color:white;
   }
   /*.row-full-height {
     height: 100%;
@@ -154,24 +169,24 @@
 
 /*footer-menu*/
   .menu-button{
-    background-color:#FFC670;
+    background-color:#74c046;
   }
   .footer {
-    border:1px solid purple;
+    /*border:1px solid #94a9b5;*/
     width:100%;
     bottom:0;
     position:fixed;
     display:block;
   }
   .col-xs-3{
-    color:purple;
+    color:black;
     text-align:center;
     font-size:100%;
     padding: 10px 0 10px 0;
-    border:1px solid purple;
+    border:1px solid black;
     /*overflow:scroll;*/
   }
   .body-color {
-    background-color:#FFEFD6;
+    /*background-color:#FFEFD6;*/
   }
 /*}*/
