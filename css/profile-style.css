@@ -10,8 +10,9 @@
 .form-content input{
   height:5%;
 }
-.category-title{
+.category span{
   font-size:120%;
+  text-align: center;
 }
 .form-group label{
   float:left;
@@ -24,20 +25,36 @@
 .form-inline div:first-child {
   padding-top:5%;
 }
-table tr {
-  width:100%;
+.contact-table tr:nth-child(odd) {
+  background-color:lightgrey;
 }
-table tr td:nth-child(even){
+.contact-table tr td:nth-child(even){
   margin-left:5%;
-  padding-bottom:1%;
+  padding-top:0.5%;
+  padding-bottom:0.5%;
   padding-right:5%;
   width:70%;
 }
+
+.checkbox {
+  margin-left:5%;
+}
+
 
 #profile-form img{
   float:right;
   margin:5% 5% 0 0;
   width:30%;
+}
+
+
+.radio-controls label {
+    display: inline-block;
+    text-align: center;
+}
+.radio-controls input {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 

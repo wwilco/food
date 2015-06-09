@@ -9,12 +9,12 @@
   </head>
   <body class="body-color">
     <div class="container">
-
+      <!-- header -->
       <div class="row header-container">
         <img id="banner" src="images/banner_platerate.png"/>
         <img id="logo" src="images/logo_platerate.png" alt="" />
       </div>
-
+      <!-- Profile section -->
       <div class="row">
         <div class="category">
           <span class="category-title">Profile</span>
@@ -36,17 +36,16 @@
               <button type="submit" class="btn btn-default">Save</button>
             </form>
           </div>
-
         </div>
       </div>
-
+      <!-- contact info section -->
       <div class="row">
         <div class="category">
           <span class="category-title">Contact Info / Preferences</span>
           <div class="form-content">
             <form class="form-inline" action="#" method="POST" target="_self" class="col-xs-12 col-md-6 center-block">
               <div class="form-group-contact" style="width:100%">
-                <table style="width:100%">
+                <table style="width:100%" class="contact-table">
                   <tr>
                     <td>
                       <label for="street_name">Street</label>
@@ -81,7 +80,7 @@
                   </tr>
                   <tr>
                     <td>
-                      <label for="mobile_phone">Mobile Phone</label>
+                      <label for="mobile_phone">Mobile Phone Number</label>
                     </td>
                     <td>
                       <input type="text" class="form-control" id="mobile_phone">
@@ -97,35 +96,85 @@
                   </tr>
                 </table>
               </div>
-              <div class="form-group">
-              </div>
-              <div class="form-group">
-              </div>
-              <div class="form-group">
-              </div>
-              <div class="form-group">
-              </div>
-              <div class="form-group">
-              </div>
               <button type="submit" class="btn btn-default">Save</button>
+              <p>Select how you want to hear about offers from us and/or our partners:</p>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value=""> by Email </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value=""> by Text Message </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value=""> Please don't contact me</label>
+              </div>
             </form>
          </div>
         </div>
       </div>
-
-
+      <!-- Dietary Pref General section -->
       <div class="row">
         <div class="category">
           <span class="category-title">Some Preferences - General</span>
           <div class="form-content">
-           <form class="form" action="index.html" method="post">
-             <input type="text" name="name" value="">
-             <input type="text" name="name" value="">
-             <input type="button" name="name" value="">
-           </form>
+            <form class="form-inline" action="#" method="POST" target="_self" class="col-xs-12 col-md-6 center-block">
+              <div class="form-group">
+                <label for="filter_by">Filter By...</label>
+                <input style="width:60%" type="text" name="filter_by" class="form-control">
+              </div>
+              <div class="checkbox">
+                 <label>
+                   <input type="checkbox" value="">Vegetarian</label>
+               </div>
+               <div class="checkbox">
+                 <label>
+                   <input type="checkbox" value="">Vegan</label>
+               </div>
+               <div class="checkbox">
+                 <label>
+                   <input type="checkbox" value="">Gluten-Free</label>
+               </div>
+               <div class="checkbox">
+                 <label>
+                   <input type="checkbox" value="">Gluten-Free</label>
+               </div>
+              <div class="form-group">
+                <label for="prefs">Preferences<br>Selected</label>
+                <input style="width:60%" type="text" name="prefs" class="form-control">
+              </div>
+              <button type="submit" class="btn btn-default">Save</button>
+            </form>
+
+
+
+            <form class="form-group" action="index.html" method="post">
+              <label for="filter_by">Filter By...</label>
+              <input style="width:60%" type="text" name="filter_by" class="form-control">
+              <div class="checkbox">
+                 <label>
+                   <input type="checkbox" value="">Vegetarian</label>
+               </div>
+               <div class="checkbox">
+                 <label>
+                   <input type="checkbox" value="">Vegan</label>
+               </div>
+               <div class="checkbox">
+                 <label>
+                   <input type="checkbox" value="">Gluten-Free</label>
+               </div>
+               <div class="checkbox">
+                 <label>
+                   <input type="checkbox" value="">Gluten-Free</label>
+               </div>
+             </form>
+
          </div>
         </div>
       </div>
+
+<!-- Dietary Ingredients Section -->
 
       <div class="row">
         <div class="category">
@@ -144,10 +193,10 @@
          </div>
         </div>
       </div>
-
+      <!-- Restaurant Section -->
       <div class="row">
         <div class="category">
-          <span class="category-title">Some Spot</span>
+          <span class="category-title">Restaurant Search</span>
           <div class="form-content">
            <form class="form" action="index.html" method="post">
              <input type="text" name="name" value="">
@@ -157,10 +206,10 @@
          </div>
         </div>
       </div>
-
+      <!-- Past Ratings Section -->
       <div class="row">
         <div class="category">
-          <span class="category-title">Some Search</span>
+          <span class="category-title">Past Ratings</span>
           <div class="form-content">
            <form class="form" action="index.html" method="post">
              <input type="text" name="name" value="">
@@ -170,15 +219,15 @@
          </div>
         </div>
       </div>
-
 
        <!--home menu/footer -->
        <div class="row footer">
-         <div class="menu-button col-xs-3 col-sm-3 col-md-3">rate</div>
-         <div class="menu-button col-xs-3 col-sm-3 col-md-3">share</div>
-         <div class="menu-button col-xs-3 col-sm-3 col-md-3">somethign</div>
-         <div class="menu-button col-xs-3 col-sm-3 col-md-3">other</div>
+         <div class="menu-button col-xs-3 col-sm-3 col-md-3">Search</div>
+         <div class="menu-button col-xs-3 col-sm-3 col-md-3">Rate</div>
+         <div class="menu-button col-xs-3 col-sm-3 col-md-3">Profile</div>
+         <div class="menu-button col-xs-3 col-sm-3 col-md-3">Share</div>
        </div>
+
      </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -190,7 +239,7 @@
     $("#profile-form").show();
     $(".category-title").click(function() {
       $(this).parent().children(".form-content").slideToggle(200); });
-    });
+  });
 
   </script>
 </html>
