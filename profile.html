@@ -117,29 +117,45 @@
       <!-- Dietary Pref General section -->
       <div class="row">
         <div class="category">
-          <span class="category-title">Some Preferences - General</span>
+          <span class="category-title">Dietary Preferences - General</span>
           <div class="form-content">
-            <form class="form-inline" action="#" method="POST" target="_self" class="col-xs-12 col-md-6 center-block">
+            <form class="" action="#" method="POST" target="_self" class="col-xs-12 col-md-6 center-block">
               <div class="form-group">
-                <label for="filter_by">Filter By...</label>
+                <label for="filter_by">Add New <br>Preference</label>
                 <input style="width:60%" type="text" name="filter_by" class="form-control">
               </div>
-              <div class="checkbox">
-                 <label>
-                   <input type="checkbox" value="">Vegetarian</label>
-               </div>
-               <div class="checkbox">
-                 <label>
-                   <input type="checkbox" value="">Vegan</label>
-               </div>
-               <div class="checkbox">
-                 <label>
-                   <input type="checkbox" value="">Gluten-Free</label>
-               </div>
-               <div class="checkbox">
-                 <label>
-                   <input type="checkbox" value="">Gluten-Free</label>
-               </div>
+
+              <table class="diet-table">
+                <tr>
+                  <td>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" value="">Vegetarian</label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" value="">Gluten-Free</label>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" value="">Gluten-Free</label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" value="">Vegan</label>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+
               <div class="form-group">
                 <label for="prefs">Preferences<br>Selected</label>
                 <input style="width:60%" type="text" name="prefs" class="form-control">
@@ -178,7 +194,7 @@
 
       <div class="row">
         <div class="category">
-          <span class="category-title">Some Ingredients - General</span>
+          <span class="category-title">Ingredient Preferences - General</span>
           <div class="form-content">
            <form class="form" action="index.html" method="post">
              <input id="wb" type="checkbox" />
@@ -186,13 +202,55 @@
              <input id="wb" type="checkbox" />
              <label for="wb" id="somelabel">Vegetarian</label>
              <input type="text" name="name" value="">
-
-             <input type="text" name="name" value="">
-             <input type="button" name="name" value="">
            </form>
+
          </div>
         </div>
       </div>
+      <table>
+        <ul>
+          <td>
+            <div angucomplete id="Ingredient_pref" placeholder="Type Ingredient Preference" selectedobject="selected_ingredient_pref" localdata="ingredient_pref" searchfields="firstName,surname" titlefield="firstName,surname" minlength="1" input type="text">
+            </div>
+          </td>
+          <td>
+            <button type="button" class="btn btn-default" id="ingredient_pref_no">No</button>
+          </td>
+          <td>
+            <button type="button" class="btn btn-default" id="ingredient_pref_yes">Yes</button>
+          </td>
+
+        </ul>
+
+        <ul>
+          <td>
+            <label for="ingredient_pref" id="ingredient_pref_1">Bell Peppers</label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="ingredient_pref_1" value="No" checked>No</label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="ingredient_pref_1" value="Yes">Yes</label>
+          </td>
+        </ul>
+
+        <ul>
+          <td>
+            <label for="ingredient_pref" id="ingredient_pref_2">Sea Urchin</label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="ingredient_pref_2" value="No" checked>No</label>
+          </td>
+          <td>
+            <label>
+              <input type="radio" name="ingredient_pref_2" value="Yes">Yes</label>
+          </td>
+        </ul>
+      </table>
+
       <!-- Restaurant Section -->
       <div class="row">
         <div class="category">
