@@ -4,6 +4,11 @@
   /*border-style:solid;*/
   margin:.5%;
 }
+.category-switch{
+  border-width:1px 0 1px 0;
+  background-color:purple;
+  margin:.5%;
+}
 .form-content{
   background-color:white;
 }
