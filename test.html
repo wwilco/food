@@ -1,110 +1,52 @@
-<html>
-  <head>
-    <title>profile</title>
-    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style media="screen">
-      .block{
-        border:1px solid hotpink;
-        margin:1%;
-      }
-      .block input{
-        height:5%;
-      }
-      /*.visible,p{
-        color:red;
-      }
-      section .woah,p{
-        color:purple;
-      }*/
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Autocomplete - Default functionality</title>
+  <!-- <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> -->
 
-    </style>
-  </head>
-  <body class="body-color">
-    <div class="container">
-
-      <div class="block one" id="block-one">
-        a block 1
-        <section class="form-section">
-          <p>
-            somethign
-          </p>
-          <form class="form" action="index.html" method="post">
-            <input type="text" name="name" value="">
-            <input type="text" name="name" value="">
-            <input type="button" name="name" value="">
-
-          </form>
-        </section>
-      </div>
-      <div class="block two" id="block-two">
-        a block 2
-        <section class="form-section">
-          <form class="form" action="index.html" method="post">
-            <input type="text" name="name" value="">
-            <input type="text" name="name" value="">
-            <input type="button" name="name" value="">
-
-          </form>
-        </section>
-      </div>
-
-      <div class="block three" id="block-three">
-        a block 3
-        <section class="form-section">
-          <form class="form" action="index.html" method="post">
-            <input type="text" name="name" value="">
-            <input type="text" name="name" value="">
-            <input type="button" name="name" value="">
-
-          </form>
-        </section>
-      </div>
-
-      <div class="block four" id="block-four">
-        a block 4
-        <section class="form-section">
-          <form class="form" action="index.html" method="post">
-            <input type="text" name="name" value="">
-            <input type="text" name="name" value="">
-            <input type="button" name="name" value="">
-
-          </form>
-        </section>
-      </div>
-
-    </div>
-
-
-
-  </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-  // $('.block #one').on('click', function(e){
-  //   $('section').toggleClass('visible');
-  // });
-
-  // $('.block').on('click', function(e){
-  //   $('section').toggleClass('visible').toggleClass('hidden');
-  // });
-
-  // $('.block').on('click', function(e){
-  //   $(this,'section').toggleClass('visible').toggleClass('hidden');
-  // });
-
-  jQuery(document).ready(function($) {
-    $(".form-section").hide();
-    $(".block").click(function() {
-      // $(".entry-content").hide();
-    $(this).parent().children(".form-section").slideToggle(500); });
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+  <script>
+  $(function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
   });
-
-
-
-
-
   </script>
+</head>
+<body>
+
+<div class="ui-widget">
+  <label for="tags">Tags: </label>
+  <input id="tags">
+</div>
+
+
+</body>
 </html>

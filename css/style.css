@@ -22,8 +22,6 @@
     display:block;
     height:18%;
     padding-top:1%;
-    /*max-height:30%;*/
-    /*border:1px solid orange;*/
   }
   .middle-container{
     display:block;
@@ -31,23 +29,17 @@
     font-size:90%;
     height:20%;
     box-sizing:border-box;
-    /*margin-top:5%;*/
-    /*border:1px solid orange;*/
   }
   .form-bottom-container{
-    /*padding-top:5%;*/
     display:block;
     height:18%;
     box-sizing:border-box;
-    /*margin-bottom:20%;*/
-    /*overflow:hidden;*/
   }
   .mid-bottom-container{
     box-sizing:border-box;
     border:2px solid #94a9b5;
     background-color:lightgrey;
     margin-top:1%;
-    /*display:inline-block;*/
     padding-bottom:15%;
   }
   /*header*/
@@ -55,20 +47,17 @@
     height:100%;
     padding-left:5%;
     display:block;
-    /*border:1px solid purple;*/
   }
   .header-container h1{
     float:right;
     text-align:center;
     padding-right:5%;
-    /*border:1px solid orange;*/
   }
   #banner{
     float:right;
     text-align:center;
     padding-right:5%;
     height:90%;
-    /*border:1px solid orange;*/
   }
   .slogan{
     box-sizing:border-box;
@@ -81,7 +70,6 @@
   }
   /*forms and buttons*/
   .form{
-    /*border:1px solid hotpink;*/
     display:block;
     position:relative;
     text-align:center;
@@ -112,7 +100,6 @@
     background-size:15px;
     background-repeat:no-repeat;
     background-position:95%;
-    /*padding-left:5%;*/
   }
 
   /*middle container*/
@@ -120,10 +107,6 @@
     height:13%;
     padding-top:4%;
     padding-bottom:5px;
-    /*border:1px solid green;*/
-  }
-  .middle-container a{
-    /*padding-bottom:5%;*/
   }
   .middle-container .pick-box:first-child {
     padding-right:0%;
@@ -167,13 +150,11 @@
     color:grey;
   }
 
-
 /*footer-menu*/
   .menu-button{
     background-color:#74c046;
   }
   .footer {
-    /*border:1px solid #94a9b5;*/
     width:100%;
     bottom:0;
     position:fixed;
@@ -185,9 +166,6 @@
     font-size:100%;
     padding: 10px 0 10px 0;
     border:1px solid black;
-    /*overflow:scroll;*/
   }
-  .body-color {
-    /*background-color:#FFEFD6;*/
-  }
+
 /*}*/

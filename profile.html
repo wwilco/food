@@ -122,7 +122,7 @@
             <form class="" action="#" method="POST" target="_self" class="col-xs-12 col-md-6 center-block">
               <div class="form-group">
                 <label for="filter_by">Add New <br>Preference</label>
-                <input style="width:60%" type="text" name="filter_by" class="form-control">
+                <input style="width:60%" type="text" id="filter_by" name="filter_by" class="form-control">
               </div>
 
               <table class="diet-table">
@@ -130,13 +130,13 @@
                   <td>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox" value="">Vegetarian</label>
+                        <input type="checkbox" class="check-class" value="Vegetarian">Vegetarian</label>
                     </div>
                   </td>
                   <td>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox" value="">Gluten-Free</label>
+                        <input type="checkbox" class="check-class" value="Gluten-Free">Gluten-Free</label>
                     </div>
                   </td>
                 </tr>
@@ -144,13 +144,13 @@
                   <td>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox" value="">Gluten-Free</label>
+                        <input type="checkbox" value="Gluten-Free">Gluten-Free</label>
                     </div>
                   </td>
                   <td>
                     <div class="checkbox">
                       <label>
-                        <input type="checkbox" value="">Vegan</label>
+                        <input type="checkbox" value="Vegan">Vegan</label>
                     </div>
                   </td>
                 </tr>
@@ -158,17 +158,20 @@
 
               <div class="form-group">
                 <label for="prefs">Preferences<br>Selected</label>
-                <input style="width:60%" type="text" name="prefs" class="form-control">
+                <input style="width:60%;" type="text" name="prefs" class="form-control">
               </div>
-              <button type="submit" class="btn btn-default">Save</button>
+
+              <div id="show" style="border:1px solid blue"></div>
+
+              <button type="submit" class="btn btn-default">Find Your Food!</button>
             </form>
 
 
 
-            <form class="form-group" action="index.html" method="post">
+            <!-- <form class="form-group" action="index.html" method="post">
               <label for="filter_by">Filter By...</label>
               <input style="width:60%" type="text" name="filter_by" class="form-control">
-              <div class="checkbox">
+               <div class="checkbox">
                  <label>
                    <input type="checkbox" value="">Vegetarian</label>
                </div>
@@ -184,7 +187,7 @@
                  <label>
                    <input type="checkbox" value="">Gluten-Free</label>
                </div>
-             </form>
+             </form> -->
 
          </div>
         </div>
@@ -290,14 +293,61 @@
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <!-- <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> -->
+  <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+
   <script type="text/javascript">
 
-  $(document).ready(function($) {
+  $(document).ready(function() {
+
+    // menu animation
     $(".form-content").hide();
     $("#profile-form").show();
     $(".category-title").click(function() {
       $(this).parent().children(".form-content").slideToggle(200);
     });
+
+    // checkbox write-up
+
+    $('.check-class').change(function(){
+      if ($(this).prop('checked') === true) {
+        $('#show').text($(this).attr('value'));
+      }
+      else {
+        $('#show').text('');
+      };
+    });
+
+    // var changing = function(){
+    //   var txtOutPut = document.querySelector("#show");
+    //   var txtInput = document.querySelector(".check-class").value;
+    //   txtOutPut.innerHTML = txtInput;
+    // }
+    // var txtbx = document.querySelector("#show");
+    // txtbx.addEventListener("click", changing);
+
+    // var clicker = function(){
+    //   var show = document.querySelector('#show');
+    //   var check = document.querySelector('.check-class');
+    //
+    //   if (check === 'checked'){
+    //     show.innerHTML = check.value;
+    //   };
+    // };
+
+    // auto-complete
+    $(function() {
+      var dietary_tags =
+      [ "vegetarian",
+        "vegan",
+        "gluten-free",
+        "paleo" ];
+      $( "#filter_by" ).autocomplete({
+        source: dietary_tags
+      });
+    });
+
   });
 
   </script>
